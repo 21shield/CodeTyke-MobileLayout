@@ -46,3 +46,48 @@
         }
     }
 }
+
+
+@media (max-width: $tablet){
+    .learningModule{
+         &__selections{
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            padding: 1rem;
+         }
+
+        &__submitButtonContainer{
+        display: grid;
+        align-items: stretch;
+        padding: 1rem;
+         }
+    }
+   
+}
+
+@media (max-width: $mobile){
+    .learningModule{
+        &__submitButtonContainer{
+            display: grid;
+            align-items: stretch;
+            padding: 2rem;
+        }
+
+        &__answerArea{
+            background-color: transparent;
+            box-shadow: none;
+        }
+        &__answerArea{
+            padding-left: 0rem 1rem;
+            margin: 1rem;
+        }
+        &__subHeader {
+            display: none;
+        }
+        &__header{
+            // display: grid;
+            text-align: left;
+        }
+    }
+    
+}
